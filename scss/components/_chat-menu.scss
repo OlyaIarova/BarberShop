@@ -1,0 +1,106 @@
+/**
+  |============================
+  | chat-menu
+  |============================
+*/
+
+.chat-menu {
+  position: fixed;
+  right: 30px;
+  bottom: 90px;
+}
+
+.chat-menu-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background-image: url(https://gist.githubusercontent.com/yazdipour/91dea3fdf97dba702ed89a6a1b9a98a7/raw/8c4870d4fda64c6f8dbf9d12d579d1ad66c3f360/rainbowcat.gif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.chat-menu-list {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chat-menu-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chat-menu-btn:hover ~ .chat-menu-list .chat-menu-item {
+  transform: translateY(calc(var(--item) * -30px)) translateX(-50%);
+}
+
+.chat-menu-icon {
+  fill: #ff6c00;
+}
+
+
+
+
+
+
+
+.footer__title{
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  
+  
+  }
+  .footer__text{
+  
+  
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  
+  }
+
+
+  <footer>
+  <h2 class="footer__title">HOMEMADE ICE CREAM MADE</h2>
+  <p class="footer__text">WITH PASSION</p>
+  <ul class="footer__icon">
+    <li>
+      <a href="" class="footer__link">
+        <svg width="34" height="34"></svg>
+      </a>
+    </li>
+    <li>
+      <a href="" class="footer__link">
+        <svg width="34" height="34"></svg>
+      </a>
+    </li>
+    <li>
+      <a href="" class="footer__link">
+        <svg width="34" height="34"></svg>
+      </a>
+    </li>
+    <li>
+      <a href="" class="footer__link">
+        <svg width="34" height="34"></svg>
+      </a>
+    </li>
+  </ul>
+  <a href="tel:+610383766284">Feel free to contact +61 (0) 383 766 284</a>
+  <span class="footer__copyright">© 2022 - IceCream. All Rights Reserved.</span>
+</footer>
